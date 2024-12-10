@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Quiz</title>
+    <link rel="stylesheet" href="end.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Halaman Akhir -->
+    <div class="result-container">
+        <h1>Hasil Quiz</h1>
+        <p id="score">Skor Anda: 0</p> <!-- Skor akan diisi melalui JavaScript -->
+        <div class="button-group">
+            <button id="home-btn">Kembali ke Home</button>
+            <button id="retry-btn">Coba Lagi</button>
+        </div>
+    </div>
+
+    <script>
+        // Ambil skor dari URL (query parameter)
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score') || 0; // Default skor 0 jika tidak ada nilai
+
+        // Tampilkan skor di halaman
+        document.getElementById('score').textContent = `Skor Anda: ${score}`;
+
+        // Fungsi untuk navigasi
+        document.getElementById('home-btn').addEventListener('click', function () {
+            window.location.href = "index.html"; // Kembali ke halaman awal
+        });
+
+        document.getElementById('retry-btn').addEventListener('click', function () {
+            window.location.href = "quiz.html"; // Kembali ke halaman quiz
+        });
+    </script>
+</body>
+</html>

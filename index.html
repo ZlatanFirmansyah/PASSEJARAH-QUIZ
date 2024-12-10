@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WQuiz Sej</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Halaman Awal -->
+    <div class="welcome-container">
+        <h1>Selamat Datang di Quiz PKI!</h1>
+        <p>
+            Uji pengetahuanmu tentang sejarah PKI dengan menjawab 15 pertanyaan menarik. 
+            Klik tombol di bawah untuk memulai quiz.
+        </p>
+        <button id="start-btn">Mulai Quiz</button>
+    </div>
+
+    <script >
+        // Navigasi ke halaman quiz saat tombol diklik
+        document.getElementById("start-btn").addEventListener("click", function () {
+            window.location.href = "quiz.html"; // Mengarahkan ke halaman quiz
+        });
+    </script>
+</body>
+</html>

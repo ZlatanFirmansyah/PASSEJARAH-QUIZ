@@ -1,0 +1,91 @@
+/* Mengatur font global */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #b02121, #b51616);
+    background-size: cover;
+    color: #1f1f1f;
+}
+
+/* Navbar */
+nav {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Container Quiz */
+.quiz-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.647);
+    color: #ffffff;
+}
+
+
+.quiz-container h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.quiz-container p {
+    color: #ffffff;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+input[type="radio"] {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 10px;
+}
+
+input[type="text"] {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 25px;
+    width: 300px;
+    border-radius: 6px;
+}
+
+/* Tombol Submit */
+#submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #b02121;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#submit-btn:hover {
+    background: #ed6d6d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1f1f1f;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
